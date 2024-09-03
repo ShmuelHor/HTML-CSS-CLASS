@@ -1,0 +1,73 @@
+body{
+    position: relative;
+}
+#up1{
+    background-color: red;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    
+}
+#up1 .up{
+    position: absolute;
+    background-color: rgb(214, 110, 110);
+}
+#up1 #upD1{
+    left: 0;
+    
+}
+#up1 #upD2{
+    left: 50%;
+    
+}
+#up1 #upD3{
+    right: 0;
+}
+
+#cntr-laft{
+    left: 0;
+    top: 20px;
+    background-color: rgb(220, 177, 125);
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    
+}
+#cntr-laft .cntr-laft{
+    /* padding-bottom: 10px; */
+    background-color: goldenrod;
+    margin:  10px 0;
+} 
+#cntr-laft #contr-laftD5{
+    position: absolute;
+    background-color: rgb(213, 107, 61);
+    margin:  100px 50px;
+}
+#cntr-right{
+    right: 0;
+    top: 20px;
+    background-color: rgb(129, 177, 177);
+    width: 835px;
+    height: 400px;
+    position: absolute;
+}
+#cntr-right #cntr-rightD1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+#down{
+    top: 420px;
+    background-color: pink;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+#downD1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+
