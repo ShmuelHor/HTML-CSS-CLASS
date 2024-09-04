@@ -1,0 +1,21 @@
+#name{
+    top: 0;
+    position: absolute;
+    
+}
+.name{
+    width: 100px;
+    border: 2px black solid;
+    left: 50%;
+    
+}
+#phone{
+    top: 0;
+    position: absolute;
+    left: 110px;
+}
+.phone{
+    width: 100px;
+    border: 2px black solid;
+    left: 50%;
+}
