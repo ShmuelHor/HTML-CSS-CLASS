@@ -3,10 +3,11 @@ body{
     background-color:  #c5c1c16a;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 #up1{
     position: absolute;
-    background-color: rgb(6, 37, 6);  
+    background-color: rgb(9, 58, 9);  
     display: flex;
     justify-content: center; 
     gap: 20px;
@@ -15,11 +16,13 @@ body{
     right: 15px;
 }
 .up1{
+    font-size: 10px;
     color: white;
 }
 .up1:hover{
     background-color: rgb(9, 58, 9);
     padding: 3px;
+    font-size: 12px;
 }
 #up2{
     
@@ -30,29 +33,46 @@ body{
 }
 .up2{
     position: relative;
+    font-size: 25px;
     color: white;
     text-align: center;
     top: 25px;
-    font-size: 25px;
 }
 #center1{
     background-color: white;
-    height: 80px; 
+    height: 150px; 
     margin: 10px;
     border-radius: 5px;
 }
 .center1{
     margin: 10px;
 }
-#center2{
-    background-color: white;
-    height: 550px; 
-    
-    margin: 10px 10px 0 10px;
-    border-radius: 5px;  
+#center1D1{
+    color: rgb(28, 131, 28);
 }
-.center2{
+#center2{
+    background-color: rgba(187, 182, 182, 0.358);
+    height: 340px;
     margin: 10px;
+    border-radius: 5px;
+}
+.enter2{
+    padding: 5px;
+    border: 5px;
+    width: 96%;
+}
+input{
+    left: 5px;
+    padding: 5px;
+}
+p{
+    margin: 0;
+}
+#but{
+    background-color: rgb(9, 58, 9);
+    border-radius: 5px;
+    color: white;
+    left: 5px;
 }
 #down{
     background-color: rgb(9, 58, 9);
@@ -62,38 +82,4 @@ body{
     width: 100%; 
     text-align: center;
     color: white;
-}
-.center-center{
-    
-    background-color: #c5c1c16a;
-    margin:5px 250px;
-    width: 40%;
-    padding: 5px;
-    border-radius: 5px;
-
-}
-.center-center:hover{  
-    background-color: #c5c1c1d7;
-    /* cursor: pointer; */
-}
-.red{
-    
-    background-color: rgba(255, 0, 0, 0.4);
-    padding: 0 2px;
-    width: 35px;
-    border-radius: 5px;
-}
-.blu{
-    
-    background-color: rgba(68, 149, 196, 0.366);
-    padding: 0 2px;
-    width: 35px;
-    border-radius: 5px;
-}
-.yellow{
-    
-    background-color: rgba(255, 255, 0, 0.417);
-    padding: 0 2px;
-    width: 35px;
-    border-radius: 5px;
 }
