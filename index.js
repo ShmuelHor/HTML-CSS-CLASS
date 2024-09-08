@@ -83,7 +83,7 @@ const data = [
   
   // Exercise 1: Use the filter method to get all the friends of John Doe
   const friendsJohn = data.filter(p => p.name === "John Doe")[0].friends;
-//   console.log(friendsJohn);
+  // console.log(friendsJohn);
 
   // Exercise 2: Use the filter method to get all the people who live in New York
   const peopleLiveInNY = data.filter(c => c.address.city === "New York");
