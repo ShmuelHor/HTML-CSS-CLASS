@@ -1,5 +1,6 @@
 p{
-    color:black;
-    text-decoration :underline
-    
+    color:white;
+    text-decoration :underline;
+    text-align:center ;
+    display: flex;
 }
