@@ -1,5 +1,5 @@
 body {
-    background-color: #8080802c;
+    background-color: #a5b8bc4c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 2px solid black;
+
 }
 
 #inputUp {
@@ -21,12 +23,33 @@ body {
 }
 #divTable{
     margin: 10px;
-    background-color: white;
-    
+    background-color: black;
+    border: 1px solid black;
     border-radius: 5px;
 }
 td{
     padding:5px 13px;
+    
 }
+.done {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.462);
+    
+}
+button{
+    margin: 0 3px;
+    background-color: rgba(127, 255, 212, 0.145);
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgba(127, 255, 212, 0.394);
+    transform: scale(1.1);
+}
+tr{
+    background-color: white;
+    
+}
+
+
 
 
