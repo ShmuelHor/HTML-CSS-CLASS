@@ -22,7 +22,7 @@ body {
     display: flex;
     align-items: center;
 }
-#submitButton{
+#submitButton {
     background-color: #3965b796;
     color: white;
     border: 2px  ;
@@ -50,16 +50,30 @@ body {
 .image{
     margin: 2px;
     height: 45px;
+    width: 85px;
 }
 .FinishLine{
 
     background-color: red;
     position: absolute;
     bottom: 0;
-    right: 5px;
+    right: 10px;
     margin: 0;
     height: 100%;
-    width: 2px;
+    width: 10px;
    
     
+}
+#Reset{
+    
+}
+.ResetButton{
+    position: absolute;
+    
+    background-color: #3965b796;
+    color: white;
+    border: 2px  ;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;  
 }

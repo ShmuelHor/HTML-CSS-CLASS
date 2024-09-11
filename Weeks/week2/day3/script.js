@@ -2,15 +2,16 @@ const numCompetitorsInput = document.getElementById("numCompetitorsInput");
 const submitButton = document.getElementById("submitButton");
 const allTracks = document.getElementById("allTracks");
 const resultBoard = document.getElementById("resultBoard");
+const Reset = document.getElementById("Reset");
+
 document.getElementById('carRaceForm').addEventListener('submit', function(event) {
     event.preventDefault();});
 
 submitButton.addEventListener("click", OnClick);
 
 function OnClick(){
-    DeleteAllTracks();
     const numCompetitors = numCompetitorsInput.value;
-    numCompetitorsInput.value ="";
+    DeleteAllTracks();
     if(numCompetitors >= 2 && numCompetitors <= 4)
     {
         CreateTracks(numCompetitors);
@@ -44,30 +45,50 @@ function CreateTracks (numCompetitors){
 
 function DeleteAllTracks(){
     allTracks.innerHTML = " ";
+    resultBoard.innerHTML  = " ";
+    
 }
 
 
 const listInterval = [];
+const listFnish = [];
 
 function moev(img) {
-    let intervalId = setInterval(() => {
+  
+    const dateTime = Date.now();
 
-        listInterval.push(intervalId);
-        let randomnum = Math.floor(Math.random() * 3) + 2;
-        img.style.marginLeft = `${parseInt(img.style.marginLeft) + randomnum}%`
-        if(parseInt(img.style.marginLeft) > 89){
+    let a = setInterval(() => {
+        listInterval.push(a);
+        let randomnum = Math.floor(Math.random() * 1.2) + 0.2;
+        img.style.marginLeft = `${parseInt(img.style.marginLeft) + randomnum}%`;
 
-            listInterval.forEach(elm => {
-                clearInterval(elm);
-                
-            });
+        if (parseInt(img.style.marginLeft) > 89) {
+            clearInterval(a);
+            listFnish.push((Date.now() - dateTime) / 1000);
+            
+            if (listFnish.length ==  numCompetitorsInput.value -2) {
+                console.log(listFnish.length);
+               printt();
+            }
         }
-    }, 100)
+    }, 5);
+    
 }
-function aa(elm){
+
+const a = [1,2,3,4];
+function printt(){
     const p = document.createElement("p");
-    p.innerHTML = `מקום רשאון הוא ${listInterval.findIndex(elm)  + 1}`;
+    p.innerHTML = `מקום ${a[0]} הגיע ב  ${listFnish[0]} שניות`;
+    a.shift();
+    listFnish.shift();
     resultBoard.appendChild(p);
 }
 
-  
+const ResetButton = document.createElement("button");
+Reset.appendChild(ResetButton)
+ResetButton.classList.add('ResetButton');
+ResetButton.innerHTML ="איפוס";
+ResetButton.addEventListener("click", ()=>{DeleteAllTracks();
+    numCompetitorsInput.value = " ";
+    a = [1,2,3,4]
+}); 
