@@ -38,7 +38,7 @@ function CreateTracks (numCompetitors){
         track.appendChild(FinishLine);
         track.appendChild(image);
         allTracks.appendChild(track);     
-        moev(image);
+        move(image);
     }
     
 }
@@ -51,9 +51,9 @@ function DeleteAllTracks(){
 
 
 const listInterval = [];
-const listFnish = [];
+const listFinish = [];
 
-function moev(img) {
+function move(img) {
   
     const dateTime = Date.now();
 
@@ -64,10 +64,10 @@ function moev(img) {
 
         if (parseInt(img.style.marginLeft) > 89) {
             clearInterval(a);
-            listFnish.push((Date.now() - dateTime) / 1000);
+            listFinish.push((Date.now() - dateTime) / 1000);
             
-            if (listFnish.length ==  numCompetitorsInput.value -2) {
-                console.log(listFnish.length);
+            if (listFinish.length ==  numCompetitorsInput.value -2) {
+                console.log(listFinish.length);
                printt();
             }
         }
@@ -78,9 +78,9 @@ function moev(img) {
 const a = [1,2,3,4];
 function printt(){
     const p = document.createElement("p");
-    p.innerHTML = `מקום ${a[0]} הגיע ב  ${listFnish[0]} שניות`;
+    p.innerHTML = `מקום ${a[0]} הגיע ב  ${listFinish[0]} שניות`;
     a.shift();
-    listFnish.shift();
+    listFinish.shift();
     resultBoard.appendChild(p);
 }
 
