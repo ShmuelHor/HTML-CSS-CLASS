@@ -11,11 +11,13 @@ function Mission2(str){
 }
 
 //3
+
+const a = [[1,2,3],[4,5,6],[7,8,9]]
 function Mission3(listTwoDimensional){
     const newListNumbers = listTwoDimensional[0];
  return newListNumbers.concat(listTwoDimensional[1],listTwoDimensional[2])
 }
-
+console.log(Mission3(a))
 //4
 function Mission4(listNumbers) {
     let isAscending = true;
