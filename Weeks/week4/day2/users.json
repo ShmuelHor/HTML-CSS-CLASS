@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1534b404-a3ab-4baa-a976-0919f6162b76",
+    "email": "aaaa@example.com",
+    "password": "$2b$10$g8prHII.wDh47mEOfBPkMuOhMqhWSxvweAZhyycl.AJ6R5WkLIO4O"
+  },
+  {
+    "id": "476f61af-c73b-4910-afaa-ff9f2c026bee",
+    "email": "shmuel@example.com",
+    "password": "$2b$10$dUVEwGCsW/yryV.8Rwmv0eELHl4V0MZyiHmDiEg00BdF0gvArPga6"
+  },
+  {
+    "id": "18c6c806-f0bf-4809-ae07-966f2e6ca187",
+    "email": "boaz@example.com",
+    "password": "$2b$10$4lnYVWELadjulp7BzmOUt.frMzrvq1PN8brAmrugb2gdlFbLducOe"
+  }
+]
